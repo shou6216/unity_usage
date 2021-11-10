@@ -2,5 +2,9 @@
 
 ## 開発環境構築
 
-* https://docs.microsoft.com/ja-jp/windows/mixed-reality/develop/unity/choosing-unity-version#unity-20203-lts-recommended
-  * Unity Hubを利用してインストール   
+* https://kuwk.jp/blog/holo2emu/#toc1
+* https://bluebirdofoz.hatenablog.com/entry/2021/08/03/231822
+
+### Mixed Reality Feature Tool   
+
+* https://www.microsoft.com/en-us/download/confirmation.aspx?id=102778
