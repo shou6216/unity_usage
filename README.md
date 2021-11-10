@@ -7,6 +7,7 @@
     * Visual Studio(Visual Studio Installer)にて以下をインストールする
         * ユニバーサル Windows プラットフォーム開発(C++(v142)ユニバーサル)
         * Unity によるゲーム開発
+        * C++によるデスクトップ開発
         * Windows SDK
 
 ### UnityのBuild SettingsにてUniversal Windows Platform選択してもNo moduleって出る場合
