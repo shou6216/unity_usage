@@ -14,3 +14,8 @@
 
 * 同画面のダウンロードボタン押して以下のexeをダウンロードして実行
     * UnitySetup-Universal-Windows-Platform-Support-for-Editor-YYYY.M.DDVV
+
+### その他
+
+* Project Setting > Playerはdeprecated
+* Windowsを開発者モードにする
