@@ -19,3 +19,48 @@
 * モジュール
   * Visual Studio
   * 実行環境に合わせたライブラリ
+
+## IDE
+
+### View
+
+#### Hierarchy
+
+* すべてのオブジェクトを表示
+* デフォルトは`SampleScene`に対して以下のみ
+  * Main Cameraのカメラ
+  * Directional Lightのライト
+
+#### Scene
+
+* オブジェクトの表示
+
+#### Game
+
+* Main Cameraが映している画面
+* 実際のゲームの画面
+
+#### Inspector
+
+* 選択したオブジェクトの詳細情報
+
+#### Project
+
+* Assetsの表示
+
+### オブジェクトの作成
+
+* Hierarchyの+ボタン
+* オブジェクトにコンポ―ネントという粒度で機能を追加する
+
+### UnityにVisual Studioを設定
+
+* Edit > Preferences > External Tools
+* External Script EditorをVisual Studioにする
+
+### C#スクリプト作成
+
+* Project Viewの+ボタン
+* C#スクリプト追加
+* 追加したファイルを選択
+* Visual Studio起動
