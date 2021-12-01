@@ -60,7 +60,9 @@
 
 ### C#スクリプト作成
 
-* Project Viewの+ボタン
-* C#スクリプト追加
-* 追加したファイルを選択
-* Visual Studio起動
+1. Project Viewの+ボタン
+2. C#スクリプト追加
+3. 追加したファイルを選択
+4. Visual Studio起動
+5. オブジェクトに「Add Component」する
+6. Scriptsで追加したC#スクリプトを追加
