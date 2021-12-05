@@ -136,3 +136,10 @@ float vertical = Input.GetAxis("Vertical");
 
 * `gameObject`という変数名固定のインスタンス変数を持っている
 * `gameObject.name`でスクリプトを追加したオブジェクトの名前を取得できる
+
+#### カメラコンポーネントの取得
+
+```c#
+Camera camera = gameObject.GetComponent<Camera>();
+camera.enaled = true or false
+```
