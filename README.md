@@ -116,20 +116,18 @@ Unityは以下5つのViewで構成する
 
 ```c#
 float horizontal = Input.GetAxis("Horizontal");
-Debug.Log(horizontal);
 ```
 * 戻り値は-1.0 < horizontal < 1.0の範囲
-* 左矢印キーを押すと-1に近づく
-* 右矢印キーを押すと1に近づく
+* 左矢印キーを押すと-1.0に近づく
+* 右矢印キーを押すと1.0に近づく
 * 何も押してない時は0
 
 #### 垂直方向
 
 ```c#
 float vertical = Input.GetAxis("Vertical");
-Debug.Log(vertical);
 ```
 * 戻り値は-1.0 < vertical < 1.0の範囲
-* 上矢印キーを押すと-1に近づく
-* 下矢印キーを押すと1に近づく
+* 上矢印キーを押すと-1.0に近づく
+* 下矢印キーを押すと1.0に近づく
 * 何も押してない時は0
