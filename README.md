@@ -19,7 +19,7 @@
   * Visual Studio
   * OSに合わせたライブラリ
 
-## UnityのIDE
+## Unity（IDE）
 
 Unityは以下5つのViewで構成する
 
