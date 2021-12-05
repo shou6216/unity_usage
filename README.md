@@ -145,12 +145,22 @@ float vertical = Input.GetAxis("Vertical");
 
 ### オブジェクト情報の取得
 
-* スクリプトを追加したオブジェクトは、`gameObject`という変数名固定のインスタンス変数で参照できる
+#### スクリプトを追加したオブジェクト情報の取得
+
+* `gameObject`という変数名固定のインスタンス変数が予め用意されている
 * `gameObject.name`でスクリプトを追加したオブジェクトの名前を取得できる
+* コンポーネントは`gameObject.GetComponent<Camera>()`
 
-#### カメラコンポーネントの取得
+#### 任意のオブジェクト情報を取得
 
+1. C#スクリプト内で、参照したいオブジェクトを`public`なインスタンス変数に定義する
 ```c#
-Camera camera = gameObject.GetComponent<Camera>();
-camera.enaled = true or false
+public GameObject cube; // publicなGameObject型の変数を定義
 ```
+2. この状態でUnityに戻って、[Inspector]のスクリプトのところを見ると、cubeの変数に対してオブジェクトを指定できる
+3. 指定する
+4. C#スクリプトに戻って、あとはやりたいことやる
+
+#### 任意のコンポーネント情報を取得
+
+* 基本オブジェクトと同じ、`public`なインスタンス変数を定義して、Unity側で設定する
