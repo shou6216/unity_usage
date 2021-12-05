@@ -21,6 +21,8 @@
 
 ## Unity（IDE）
 
+### View
+
 Unityは以下5つのViewで構成する
 
 * Hierarchy
@@ -29,48 +31,61 @@ Unityは以下5つのViewで構成する
 * Project
 * Inspector
 
-### Hierarchy
+#### Hierarchy
 
 * シーンが持つオブジェクトの一覧を表示
   * Main Cameraのカメラ
   * Directional Lightのライト
   * Cubeなど
 
-### Scene
+#### Scene
 
 * シーンが持つオブジェクトを描画する（GUI)
 
-### Game
+#### Game
 
 * カメラ視点からのSceneを表示
 * 実際のゲームの画面
 
-### Inspector
+#### Inspector
 
 * 選択したオブジェクトの詳細情報 
   * 位置、大きさなどをコンポーネント単位で表示 
 
-### Project
+#### Project
 
 * シーン、スクリプトファイルなど実ファイルを表示
+
+### スクリプトのエディタをVisual Studioにする
+
+* Edit > Preferences > External Tools
+* External Script EditorをVisual Studioにする
 
 ## Unityの基礎
 
 ### オブジェクトの作成
 
-* Hierarchyの+ボタン
-* オブジェクトにコンポ―ネントという粒度で機能を追加する
+* [Hierarchy]の+ボタンから、Cubeなどオブジェクトを作成する
 
-### UnityにVisual Studioを設定
+### C#スクリプトの作成
 
-* Edit > Preferences > External Tools
-* External Script EditorをVisual Studioにする
+1. [Project]の+ボタンから「C# Script」を選択し、C#スクリプトを作成する
+2. 作成したファイルをダブルクリック
+3. Visual Studio起動
+4. Visual Studioで実装
+5. [Inspector]の「Add Component」->「Scripts」で作成したスクリプトを選択する
 
-### C#スクリプト作成
+#### スクリプト
 
-1. Project Viewの+ボタン
-2. C#スクリプト追加
-3. 追加したファイルを選択
-4. Visual Studio起動
-5. オブジェクトに「Add Component」する
-6. Scriptsで追加したC#スクリプトを追加
+* デフォルトで`MonoBehaviour`を継承したクラスができる
+* `Start`と`Update`という2つの関数が用意されている
+* `Start`は、コメントにも書いてある通り初回起動時に呼ばれる
+* `Update`は、フレームの更新ごとに毎回呼ばれる
+
+### コンポーネント
+
+* オブジェクトはコンポーネントという単位で様々な情報を持つ
+  * 位置や大きさなども、 **Transform** コンポーネントのAttribute
+  * 上記C#スクリプトも 1つのコンポーネントとして追加される 
+
+### オブジェクトをイジる系
