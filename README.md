@@ -15,38 +15,46 @@
 ### Unity
 
 * Unity Hubの「インストール」からUnityをインストールする
-  * インストール
-* モジュール
+* 一緒にインストールするモジュール
   * Visual Studio
-  * 実行環境に合わせたライブラリ
+  * OSに合わせたライブラリ
 
-## IDE
+## UnityのIDE
 
-### View
+Unityは以下5つのViewで構成する
 
-#### Hierarchy
+* Hierarchy
+* Scene
+* Game
+* Project
+* Inspector
 
-* すべてのオブジェクトを表示
-* デフォルトは`SampleScene`に対して以下のみ
+### Hierarchy
+
+* シーンが持つオブジェクトの一覧を表示
   * Main Cameraのカメラ
   * Directional Lightのライト
+  * Cubeなど
 
-#### Scene
+### Scene
 
-* オブジェクトの表示
+* シーンが持つオブジェクトを描画する（GUI)
 
-#### Game
+### Game
 
-* Main Cameraが映している画面
+* カメラ視点からのSceneを表示
 * 実際のゲームの画面
 
-#### Inspector
+### Inspector
 
-* 選択したオブジェクトの詳細情報
+* 選択したオブジェクトの詳細情報 
+  * 位置、大きさなどをコンポーネント単位で表示 
 
-#### Project
+### Project
 
-* Assetsの表示
+* シーン、スクリプトファイルなど実ファイルを表示
+
+## Unityの基礎
 
 ### オブジェクトの作成
 
