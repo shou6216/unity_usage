@@ -89,3 +89,21 @@ Unityは以下5つのViewで構成する
   * 上記C#スクリプトも 1つのコンポーネントとして追加される 
 
 ### オブジェクトをイジる系
+
+移動や大きさ、回転の変更方法は2つ
+
+* [Inspector] の「Transform」コンポーネントのXYZ座標を直接イジる
+* [Scene]の上方にある「Move Too」や「Rotate Tool」、「Scale Tool」に切り替えて直接D&Dなどで変更する
+
+### オブジェクトの色を変える
+
+1. [Project]の+から「Material」を作成する
+2. 作成したマテリアルを選択し、[Inspector」から **Albedo** から任意の色を指定する
+3. 変更したいオブジェクトを選択し、[Inspector]の「Mesh Renderer」 -> 「Materials」で作成したマテリアルを選択する
+
+### オブジェクトに物理現象を適用する
+
+1. [Inspector]から「Add Component」して「Physics] -> 「RigidBody」を追加
+2. 「Use Gravity」にチェックを入れる
+3. 再生ボタンを押すとどんどんオブジェクトが落下する
+
