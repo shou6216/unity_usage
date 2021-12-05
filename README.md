@@ -74,6 +74,7 @@ Unityは以下5つのViewで構成する
 3. Visual Studio起動
 4. Visual Studioで実装
 5. [Inspector]の「Add Component」->「Scripts」で作成したスクリプトを選択する
+   * C#スクリプトファイルをD&Dで[Hierarchy]のオブジェクトに追加してもよい
 
 #### スクリプト
 
@@ -107,3 +108,28 @@ Unityは以下5つのViewで構成する
 2. 「Use Gravity」にチェックを入れる
 3. 再生ボタンを押すとどんどんオブジェクトが落下する
 
+### キー入力
+
+* C#スクリプトのUpdate関数内で実装する
+
+#### 水平方向
+
+```c#
+float horizontal = Input.GetAxis("Horizontal");
+Debug.Log(horizontal);
+```
+* 戻り値は-1.0 < horizontal < 1.0の範囲
+* 左矢印キーを押すと-1に近づく
+* 右矢印キーを押すと1に近づく
+* 何も押してない時は0
+
+#### 垂直方向
+
+```c#
+float vertical = Input.GetAxis("Vertical");
+Debug.Log(vertical);
+```
+* 戻り値は-1.0 < vertical < 1.0の範囲
+* 上矢印キーを押すと-1に近づく
+* 下矢印キーを押すと1に近づく
+* 何も押してない時は0
