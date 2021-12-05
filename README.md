@@ -104,9 +104,20 @@ Unityは以下5つのViewで構成する
 
 ### オブジェクトに物理現象を適用する
 
-1. [Inspector]から「Add Component」して「Physics] -> 「RigidBody」を追加
-2. 「Use Gravity」にチェックを入れる
-3. 再生ボタンを押すとどんどんオブジェクトが落下する
+* [Inspector]から「Add Component」して「Physics] -> 「RigidBody」を追加
+
+#### 重力
+
+* 「Use Gravity」にチェックを入れる
+* 再生ボタンを押すとどんどんオブジェクトが落下する
+
+#### 力を加える
+
+```c#
+Rigidbody rigidbody = gameObject.GetComponent<Rigidbody>();
+// 第一引数からX,Y,Z軸を表す。下記はX軸方向にのみ力1000を加える
+rigidbody.AddForce(1000, 0, 0);
+```
 
 ### キー入力
 
@@ -134,7 +145,7 @@ float vertical = Input.GetAxis("Vertical");
 
 ### オブジェクト情報の取得
 
-* `gameObject`という変数名固定のインスタンス変数を持っている
+* スクリプトを追加したオブジェクトは、`gameObject`という変数名固定のインスタンス変数で参照できる
 * `gameObject.name`でスクリプトを追加したオブジェクトの名前を取得できる
 
 #### カメラコンポーネントの取得
