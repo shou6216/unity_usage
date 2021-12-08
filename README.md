@@ -119,6 +119,30 @@ Rigidbody rigidbody = gameObject.GetComponent<Rigidbody>();
 rigidbody.AddForce(1000, 0, 0);
 ```
 
+#### 物体の衝突を検出する
+
+* 検出オブジェクトにRigidbodyコンポーネントを追加する必要がある
+
+```c#
+void OnCollisionEnter(UnityEngine.Collision collision)
+{
+    // 衝突したオブジェクトの情報を表示
+    Debug.Log(collision.gameObject.name);
+}
+```
+
+#### 物体のすれ違い(すり抜け）を検出する
+
+* 検出オブジェクトのXXXX Collider(Sphere Collider)コンポーネントの「Is Trigger」にチェックを入れる
+
+```c#
+void OnTriggerEnter(Collider other)
+{
+    // すれ違ったオブジェクトの情報を表示
+    Debug.Log($"{other.gameObject.name}とすれ違った");
+}
+```
+
 ### キー入力
 
 * C#スクリプトのUpdate関数内で実装する
@@ -164,3 +188,9 @@ public GameObject cube; // publicなGameObject型の変数を定義
 #### 任意のコンポーネント情報を取得
 
 * 基本オブジェクトと同じ、`public`なインスタンス変数を定義して、Unity側で設定する
+
+### オブジェクトの削除
+
+```c#
+Destroy(gameObject);
+```
