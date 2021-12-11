@@ -194,3 +194,35 @@ public GameObject cube; // publicなGameObject型の変数を定義
 ```c#
 Destroy(gameObject);
 ```
+
+### UI
+
+* TextやButtonなどUIパーツはCanvasオブジェクトという領域を用意してそこに追加する
+* [Hierarchy]でCanvasオブジェクトを作って、その中にTextなどUIオブジェクトを追加する
+
+#### Text
+
+* Textコンポーネントで文字変更
+* Rect Transformでサイズなど変更
+
+##### テキストをスクリプトで変更
+
+* UI.Textコンポーネントのtextを変更する
+
+```c#
+gameObject.GetComponent<UIEngine.UI.Text>().text = "hoge";
+```
+
+### Tag
+
+* オブジェクトにタグをつけてグル-ピングできる
+* C#スクリプトで取得できる
+
+```c#
+
+// 単一
+GameObject gameObject = GameObject.FindWithTag("タグ名");
+
+// 複数
+GameObject[] gameObjects = GameObject.FindGameObjectsWithTag("タグ名");
+```
