@@ -226,3 +226,16 @@ GameObject gameObject = GameObject.FindWithTag("タグ名");
 // 複数
 GameObject[] gameObjects = GameObject.FindGameObjectsWithTag("タグ名");
 ```
+
+### Scene
+
+#### Sceneの読み込み
+
+* シーンIDは、File > Build Settings... > Scenes in Buildに出てくるSceneごとのID
+
+```c#
+void Start()
+{
+   UnityEngine.SceneManegement.SceneManager.LoadScene(シーンID);
+}
+```
