@@ -63,7 +63,7 @@ Unityは以下5つのViewで構成する
 
 ## Unityの基礎
 
-* [Unity Usage]https://github.com/shou6216/unity_usage/tree/main/Unity%20Usage
+* [Unity Usage](https://github.com/shou6216/unity_usage/tree/main/Unity%20Usage)
 
 ### オブジェクトの作成
 
@@ -73,17 +73,14 @@ Unityは以下5つのViewで構成する
 
 1. [Project]の+ボタンから「C# Script」を選択し、C#スクリプトを作成する
 2. 作成したファイルをダブルクリック
-3. Visual Studio起動
-4. Visual Studioで実装
-5. [Inspector]の「Add Component」->「Scripts」で作成したスクリプトを選択する
+   * Visual Studioが起動する
+3. Visual Studioで実装
+   * デフォルトで`MonoBehaviour`を継承したクラス
+   * `Start`と`Update`という2つの関数が用意されている
+   * `Start`は、コメントにも書いてある通り初回起動時に呼ばれる
+   * `Update`は、フレームの更新ごとに毎回呼ばれる
+4. [Inspector]の「Add Component」->「Scripts」で作成したスクリプトを選択する
    * C#スクリプトファイルをD&Dで[Hierarchy]のオブジェクトに追加してもよい
-
-#### スクリプト
-
-* デフォルトで`MonoBehaviour`を継承したクラスができる
-* `Start`と`Update`という2つの関数が用意されている
-* `Start`は、コメントにも書いてある通り初回起動時に呼ばれる
-* `Update`は、フレームの更新ごとに毎回呼ばれる
 
 ### コンポーネント
 
@@ -229,9 +226,7 @@ GameObject gameObject = GameObject.FindWithTag("タグ名");
 GameObject[] gameObjects = GameObject.FindGameObjectsWithTag("タグ名");
 ```
 
-### Scene
-
-#### Sceneの読み込み
+### シーンの読み込み
 
 * シーンIDは、File > Build Settings... > Scenes in Buildに出てくるSceneごとのID
 
