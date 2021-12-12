@@ -8,7 +8,7 @@
 * インストールはウィザード通り
 * 起動
 * 右上のユーザーアイコンからサインイン
-  * 事前にUnity IDを用意しておく
+  * 事前にUnityアカウントを用意しておく
   * なければ作成する
 * 歯車アイコンからライセンス認証
 
@@ -17,7 +17,7 @@
 * Unity Hubの「インストール」からUnityをインストールする
 * 一緒にインストールするモジュール
   * Visual Studio
-  * OSに合わせたライブラリ
+  * 実行環境のOSに合わせたライブラリ
 
 ## Unity（IDE）
 
@@ -40,12 +40,12 @@ Unityは以下5つのViewで構成する
 
 #### Scene
 
-* シーンが持つオブジェクトを描画する（GUI)
+* シーン内のオブジェクト描画画面（GUI)
 
 #### Game
 
-* カメラ視点からのSceneを表示
-* 実際のゲームの画面
+* シーンのカメラ視点表示
+* ゲームの場合、実際の画面
 
 #### Inspector
 
@@ -62,6 +62,8 @@ Unityは以下5つのViewで構成する
 * External Script EditorをVisual Studioにする
 
 ## Unityの基礎
+
+* [Unity Usage]https://github.com/shou6216/unity_usage/tree/main/Unity%20Usage
 
 ### オブジェクトの作成
 
