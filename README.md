@@ -236,3 +236,7 @@ void Start()
    UnityEngine.SceneManegement.SceneManager.LoadScene(シーンID);
 }
 ```
+
+## 参考
+
+* [公式マニュアル](https://docs.unity3d.com/ja/2021.2/Manual/index.html)
